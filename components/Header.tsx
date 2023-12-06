@@ -14,14 +14,13 @@ const Header: React.FC<HeaderProps> = ({
 	children,
 	className,
 }) => {
-	const router = useRouter(); // Corrected variable name
+	const router = useRouter();
 
 	const handleLogout = () => {
 		//handle logout in the future
 	};
 
 	return (
-		// Corrected placement of return statement
 		<div
 			className={twMerge(
 				`
@@ -51,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({
                 "
 				>
 					<button
-						onClick={() => router.back()} // Corrected method name
+						onClick={() => router.back()}
 						className="
                             rounded-full  // Corrected class name
                             bg-black
@@ -68,7 +67,7 @@ const Header: React.FC<HeaderProps> = ({
 						/>
 					</button>
 					<button
-						onClick={() => router.forward()} // Corrected method name
+						onClick={() => router.forward()}
 						className="
                             rounded-full  // Corrected class name
                             bg-black
