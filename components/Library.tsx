@@ -50,7 +50,6 @@ const Library = () => {
                     transition"
 				/>
 			</div>
-
 			<div
 				className="
                 flex

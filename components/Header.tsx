@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({
 		>
 			<div
 				className="
-                w-full  // Corrected class name
+                w-full
                 mb-4
                 flex
                 items-center
