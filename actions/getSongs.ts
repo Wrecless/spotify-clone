@@ -3,6 +3,7 @@ import { cookies } from 'next/headers';
 
 import { Song } from '@/types';
 
+//get songs from supabase
 const getSongs = async (): Promise<Song[]> => {
 	const supabase = createServerComponentClient({
 		cookies: cookies,

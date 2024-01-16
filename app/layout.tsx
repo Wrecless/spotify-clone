@@ -7,6 +7,7 @@ import UserProvider from '@/providers/UserProvider';
 import ModalProvider from '@/providers/ModalProvider';
 import ToasterProvider from '@/providers/ToasterProvider';
 import getSongsByUserId from '@/actions/getSongsByUserId';
+import React from "react";
 
 const font = Figtree({ subsets: ['latin'] });
 
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 	description: 'Listen to Music',
 };
 
+//dont cache page
 export const revalidate = 0;
 
 export default async function RootLayout({
@@ -22,6 +24,7 @@ export default async function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
+	//get songs by user id
 	const userSongs = await getSongsByUserId();
 	return (
 		<html lang="en">

@@ -40,17 +40,17 @@ const SongItem: React.FC<SongItemProps> = ({
 		>
 			<div
 				className="
-          relative 
-          aspect-square 
-          w-full
-          h-full 
-          rounded-md 
-          overflow-hidden
-        "
+			relative 
+			aspect-square 
+			w-full
+			h-full 
+			rounded-md 
+			overflow-hidden
+			"
 			>
 				<Image
 					className="object-cover"
-					src={imagePath || '/images/music-placeholder.png'}
+					src={imagePath || '/images/liked.png'}
 					fill
 					alt="Image"
 				/>
@@ -61,22 +61,22 @@ const SongItem: React.FC<SongItemProps> = ({
 				</p>
 				<p
 					className="
-            text-neutral-400 
-            text-sm 
-            pb-4 
-            w-full 
-            truncate
-          "
+					text-neutral-400 
+					text-sm 
+					pb-4 
+					w-full 
+					truncate
+					"
 				>
 					By {data.author}
 				</p>
 			</div>
 			<div
 				className="
-          absolute 
-          bottom-24 
-          right-5
-        "
+				absolute 
+				bottom-24 
+				right-5
+        		"
 			>
 				<PlayButton />
 			</div>

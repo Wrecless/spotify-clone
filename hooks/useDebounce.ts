@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+//use function to debounce the input with a delay of 500ms
+//save on api calls
 function useDebounce<T>(value: T, delay?: number): T {
 	const [debouncedValue, setDebouncedValue] =
 		useState<T>(value);
