@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useState } from 'react';
 import {
@@ -88,10 +88,10 @@ const LikeButton: React.FC<LikeButtonProps> = ({
 	return (
 		<button
 			className="
-        cursor-pointer 
-        hover:opacity-75 
-        transition
-      "
+			cursor-pointer
+			hover:opacity-75
+			transition
+		  	"
 			onClick={handleLike}
 		>
 			<Icon

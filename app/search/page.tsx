@@ -4,11 +4,11 @@ import Header from "@/components/Header";
 
 import SearchContent from "./components/SearchContent";
 
-export const revalidate = 0;
-
 interface SearchProps {
 	searchParams: { title: string }
-};
+}
+
+export const revalidate = 0;
 
 const Search = async ({ searchParams }: SearchProps) => {
 	const songs = await getSongsByTitle(searchParams.title);
