@@ -1,5 +1,5 @@
 "use client";
-
+// @ts-ignore
 import useSound from "use-sound";
 import { useEffect, useState } from "react";
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
@@ -109,13 +109,13 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
 
             <div
                 className="
-                flex
-                md:hidden
-                col-auto
-                w-full
-                justify-end
-                items-center
-                "
+                    flex
+                    md:hidden
+                    col-auto
+                    w-full
+                    justify-end
+                    items-center
+                  "
             >
                 <div
                     onClick={handlePlay}
@@ -181,7 +181,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
                       cursor-pointer
                       hover:text-white
                       transition
-                      "
+                    "
                 />
             </div>
 

@@ -25,7 +25,7 @@ const Slider: React.FC<SliderProps> = ({
             h-10
             "
             defaultValue={[1]}
-            value={[value]}
+            value={[value ?? 1]}
             onValueChange={handleChange}
             max={1}
             step={0.1}
