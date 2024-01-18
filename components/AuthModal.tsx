@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
 import React, { useEffect } from 'react';
 import { Auth } from '@supabase/auth-ui-react';
 import { ThemeSupa } from '@supabase/auth-ui-shared';
 import {
 	useSessionContext,
-	useSupabaseClient,
+	useSupabaseClient
 } from '@supabase/auth-helpers-react';
 import { useRouter } from 'next/navigation';
 
-import useAuthModal from '../hooks/useAuthModal';
+import useAuthModal from "@/hooks/useAuthModal";
 
 import Modal from './Modal';
 
@@ -31,7 +31,7 @@ const AuthModal = () => {
 		if (!open) {
 			onClose();
 		}
-	};
+	}
 
 	return (
 		<Modal
@@ -50,15 +50,15 @@ const AuthModal = () => {
 						default: {
 							colors: {
 								brand: '#404040',
-								brandAccent: '#22c55e',
-							},
-						},
-					},
+								brandAccent: '#22c55e'
+							}
+						}
+					}
 				}}
 				theme="dark"
 			/>
 		</Modal>
 	);
-};
+}
 
 export default AuthModal;
